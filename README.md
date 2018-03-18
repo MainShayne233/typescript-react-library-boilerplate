@@ -28,3 +28,4 @@ npm test
 - Run tests: `npm test`
 - Run tests in watch mode: `npm run test:watch`
 - Lint code: `npm run lint`
+- Format code: `npm run format`
