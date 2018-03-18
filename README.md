@@ -10,6 +10,7 @@ Minimal boilerplate for writing JavaScript libaries
 - [Mocha](https://mochajs.org/) and [Chai](http://www.chaijs.com/) for testing
 - [ESlint](https://eslint.org/) with [Airbnb's config](https://www.npmjs.com/package/eslint-config-airbnb) for linting
 - [Prettier](https://github.com/prettier/prettier) for auto code formatting
+- [Travis CI](https://travis-ci.org/) for continuous integration
 
 ## Use
 ```bash
@@ -25,7 +26,10 @@ npm run build
 npm test
 ```
 
-Then just change things accordingly in `package.json` for your library.
+Then change the following to accomodate your library:
+- `README.md`
+- `package.json`
+- `.travis.yml`
 
 ## Commands
 - Build bundle: `npm run build`
