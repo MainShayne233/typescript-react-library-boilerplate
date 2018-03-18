@@ -4,13 +4,13 @@
   "description": "Boilerplate for starting a JavaScript library",
   "main": "index.js",
   "scripts": {
-    "build": "NODE_ENV=production webpack -p --config webpack.config.js",
+    "build": "webpack -p",
     "test": "mocha --require babel-register",
     "test:watch": "npm run test -- --watch",
     "lint": "eslint src/* test/* webpack.config.js"
   },
-  "author": "",
-  "license": "ISC",
+  "author": "MainShayne233",
+  "license": "MIT",
   "devDependencies": {
     "babel-core": "^6.26.0",
     "babel-loader": "^7.1.4",
