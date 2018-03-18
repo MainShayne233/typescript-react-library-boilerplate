@@ -25,6 +25,8 @@ npm run build
 npm test
 ```
 
+Then just change things accordingly in `package.json` for your library.
+
 ## Commands
 - Build bundle: `npm run build`
 - Run tests: `npm test`
