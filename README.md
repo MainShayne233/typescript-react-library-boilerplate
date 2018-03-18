@@ -19,8 +19,9 @@ Minimal boilerplate for writing JavaScript libaries
 # clone the repo and name it whatever you like
 git clone https://github.com/MainShayne233/javascript-library-boilerplate very_helpful_library
 
-# enter project and install dependencies
+# enter project, re-initialize git, and install dependencies
 cd very_helpful_library
+git init
 npm i
 
 # build bundle and run tests to verify everything works
