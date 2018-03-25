@@ -21,9 +21,10 @@ const devOutput = {
 };
 
 const prodOutput = {
+  path: path.join(__dirname, 'dist'),
+  filename: 'index.js',
   library: 'index',
   libraryTarget: 'commonjs2',
-  filename: 'index.js',
 };
 
 const prodEntry = './src/index.js';
