@@ -1,11 +1,14 @@
-# Javascript Library Boilerplate
+# React Library Boilerplate
 
-Minimal boilerplate for writing JavaScript libaries
+Minimal boilerplate for writing React libaries
+
+(builds off this [JavaScript Library Boilerplate](https://github.com/MainShayne233/javascript-library-boilerplate))
 
 ## Tools
 
 * [Babel](https://babeljs.io/) for ES6 + other JavaScript features
 * [Webpack](https://webpack.js.org/) for building bundle
+* [Webpack Dev Server](https://github.com/webpack/webpack-dev-server) and [React Hot Loader](https://github.com/gaearon/react-hot-loader) For live development
 * [Flow](https://flow.org/) for type checking
 * [Mocha](https://mochajs.org/) and [Chai](http://www.chaijs.com/) for testing
 * [ESlint](https://eslint.org/) with [Airbnb's config](https://www.npmjs.com/package/eslint-config-airbnb) for linting
@@ -16,7 +19,7 @@ Minimal boilerplate for writing JavaScript libaries
 
 ```bash
 # clone the repo and name it whatever you like
-git clone https://github.com/MainShayne233/javascript-library-boilerplate very_helpful_library
+git clone https://github.com/MainShayne233/react-libary-boilerplate very_helpful_library
 
 # enter project, re-initialize git, and install dependencies
 cd very_helpful_library
@@ -36,6 +39,7 @@ Then change the following to accomodate your library:
 
 ## Commands
 
+* Start development app: `npm start` (will be running at [localhost:4000](http://localhost:4000) by default)
 * Build bundle: `npm run build`
 * Run tests: `npm test`
 * Run tests in watch mode: `npm run test:watch`

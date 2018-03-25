@@ -1,14 +1,15 @@
 {
-  "name": "javascript-library-boilerplate",
+  "name": "react-library-boilerplate",
   "version": "0.0.1",
-  "description": "Boilerplate for starting a JavaScript library",
+  "description": "Boilerplate for starting a React library",
   "main": "index.js",
   "scripts": {
+    "start": "webpack-dev-server --mode development",
     "build": "webpack -p",
-    "test": "mocha --require babel-register",
+    "test": "mocha test/**/*.js* --recursive --require babel-register",
     "test:watch": "npm run test -- --watch",
     "flow": "flow",
-    "lint": "eslint {src,test}/**/*.js webpack.config.js",
+    "lint": "eslint {src,test}/**/*.js* webpack.config.js",
     "format": "prettier {src,test}/**/*.js  webpack.config.js  --write",
     "precommit:install": "./node_modules/precommit/bin/cli.js install -c .precommit.json",
     "precommit:uninstall": "./node_modules/precommit/bin/cli.js remove"
@@ -21,9 +22,12 @@
     "babel-loader": "^7.1.4",
     "babel-preset-es2015": "^6.24.1",
     "babel-preset-flow": "^6.23.0",
+    "babel-preset-react": "^6.24.1",
     "babel-preset-stage-0": "^6.24.1",
     "babel-register": "^6.26.0",
     "chai": "^4.1.2",
+    "enzyme": "^3.3.0",
+    "enzyme-adapter-react-16": "^1.1.1",
     "eslint": "^4.19.1",
     "eslint-config-airbnb": "^16.1.0",
     "eslint-plugin-flowtype": "^2.46.1",
@@ -34,7 +38,14 @@
     "mocha": "^5.0.5",
     "precommit": "^1.2.2",
     "prettier": "^1.11.1",
+    "react-hot-loader": "^4.0.0",
     "webpack": "^4.2.0",
-    "webpack-cli": "^2.0.13"
+    "webpack-cli": "^2.0.13",
+    "webpack-dev-server": "^3.1.1"
+  },
+  "dependencies": {
+    "prop-types": "^15.6.1",
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0"
   }
 }
