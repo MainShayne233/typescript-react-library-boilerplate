@@ -1,6 +1,6 @@
 # Static artifacts
 /node_modules
-/dist
+/lib
 
 # OSX system files
 .DS_Store
