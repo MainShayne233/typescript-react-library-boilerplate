@@ -10,7 +10,7 @@ Minimal boilerplate for writing React libaries
 * [Webpack](https://webpack.js.org/) for building bundle
 * [Webpack Dev Server](https://github.com/webpack/webpack-dev-server) and [React Hot Loader](https://github.com/gaearon/react-hot-loader) For live development
 * [Flow](https://flow.org/) for type checking
-* [Mocha](https://mochajs.org/) and [Chai](http://www.chaijs.com/) for testing
+* [Mocha](https://mochajs.org/) and [Chai](http://www.chaijs.com/) and [jsdoc-test](https://github.com/MainShayne233/jsdoc-test) for testing
 * [ESlint](https://eslint.org/) with [Airbnb's config](https://www.npmjs.com/package/eslint-config-airbnb) for linting
 * [Prettier](https://github.com/prettier/prettier) for auto code formatting
 * [Travis CI](https://travis-ci.org/) for continuous integration
