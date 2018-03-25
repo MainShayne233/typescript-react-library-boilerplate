@@ -2,8 +2,6 @@
 
 Minimal boilerplate for writing JavaScript libaries
 
-[![Build Status](https://travis-ci.org/MainShayne233/javascript-library-boilerplate.svg?branch=master)](https://travis-ci.org/MainShayne233/javascript-library-boilerplate)
-
 ## Tools
 
 * [Babel](https://babeljs.io/) for ES6 + other JavaScript features
