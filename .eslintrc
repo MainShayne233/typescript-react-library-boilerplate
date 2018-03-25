@@ -1,4 +1,6 @@
 {
+  "parser": "babel-eslint",
+  "plugins": ["flowtype"],
   "extends": "airbnb",
   "rules": {
     "arrow-parens": ["error", "always"]
