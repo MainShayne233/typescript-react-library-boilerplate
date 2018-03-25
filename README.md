@@ -8,6 +8,7 @@ Minimal boilerplate for writing JavaScript libaries
 
 * [Babel](https://babeljs.io/) for ES6 + other JavaScript features
 * [Webpack](https://webpack.js.org/) for building bundle
+* [Flow](https://flow.org/) for type checking
 * [Mocha](https://mochajs.org/) and [Chai](http://www.chaijs.com/) for testing
 * [ESlint](https://eslint.org/) with [Airbnb's config](https://www.npmjs.com/package/eslint-config-airbnb) for linting
 * [Prettier](https://github.com/prettier/prettier) for auto code formatting
@@ -40,6 +41,7 @@ Then change the following to accomodate your library:
 * Build bundle: `npm run build`
 * Run tests: `npm test`
 * Run tests in watch mode: `npm run test:watch`
+* Run type checking: `npm run flow`
 * Lint code: `npm run lint`
 * Format code: `npm run format`
 
