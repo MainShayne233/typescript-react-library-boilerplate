@@ -44,10 +44,14 @@ Then change the following to accomodate your library:
 * Run type checking: `npm run flow`
 * Lint code: `npm run lint`
 * Format code: `npm run format`
+* Install precommit hook: `npm run precommit:install`
+* Uninstall precommit hook: `npm run precommit:uninstall`
 
-## Precommit format hook
+## Precommit hook
 
-There is a a `precommit` hook that will auto format all code prior to any commit.
-This can be stopped by removing the `precommit` script from `package.json`, and
-then you can also remove `pretty-quick` and `husky` from the dev dependencies
-in `package.json`
+The precommit hook will run the tests, type checker, linter, and formatter
+prior to commiting changes, and exit if any of these steps failed. If you
+do not want to use this feature, simply remove the precommit scripts and the
+`precommit` command from `package.json`, and remove the `.precommit.json` file.
+
+
