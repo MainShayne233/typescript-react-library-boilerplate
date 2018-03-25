@@ -2,7 +2,7 @@
 
 Minimal boilerplate for writing React libaries
 
-(builds off this [JavaScript Library Boilerplate](https://github.com/MainShayne233/javascript-library-boilerplate))
+(builds off [this JavaScript Library Boilerplate](https://github.com/MainShayne233/javascript-library-boilerplate))
 
 ## Tools
 
@@ -19,10 +19,11 @@ Minimal boilerplate for writing React libaries
 
 ```bash
 # clone the repo and name it whatever you like
-git clone https://github.com/MainShayne233/react-libary-boilerplate very_helpful_library
+git clone https://github.com/MainShayne233/react-library-boilerplate very_helpful_library
 
 # enter project, re-initialize git, and install dependencies
 cd very_helpful_library
+rm -rf .git
 git init
 npm i
 
