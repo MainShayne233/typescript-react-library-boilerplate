@@ -49,6 +49,7 @@ Then change the following to accomodate your library:
 
 ## Precommit hook
 
+In order to use the precommit hook, you must first run `npm run precommit:install`.
 The precommit hook will run the tests, type checker, linter, and formatter
 prior to commiting changes, and exit if any of these steps failed. If you
 do not want to use this feature, simply remove the precommit scripts and the
