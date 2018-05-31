@@ -17,6 +17,11 @@ Minimal boilerplate for writing React libaries
 
 ## Use
 
+NOTE: This boilerplate uses [`yarn`](https://yarnpkg.com/lang/en/) for
+dependency management, but if you prefer to use the
+[`npm` CLI](https://docs.npmjs.com/cli/npm), just remove the `yarn.lock` file
+and use the appropriate `npm` commands.
+
 ```bash
 # clone the repo and name it whatever you like
 git clone https://github.com/MainShayne233/react-library-boilerplate very_helpful_library
@@ -25,11 +30,11 @@ git clone https://github.com/MainShayne233/react-library-boilerplate very_helpfu
 cd very_helpful_library
 rm -rf .git
 git init
-npm i
+yarn
 
 # build bundle and run tests to verify everything works
-npm run build
-npm test
+yarn build
+yarn test
 ```
 
 Then change the following to accomodate your library:
@@ -40,19 +45,19 @@ Then change the following to accomodate your library:
 
 ## Commands
 
-* Start development app: `npm start` (will be running at [localhost:4000](http://localhost:4000) by default)
-* Build bundle: `npm run build`
-* Run tests: `npm test`
-* Run tests in watch mode: `npm run test:watch`
-* Run type checking: `npm run flow`
-* Lint code: `npm run lint`
-* Format code: `npm run format`
-* Install precommit hook: `npm run precommit:install`
-* Uninstall precommit hook: `npm run precommit:uninstall`
+* Start development app: `yarn start` (will be running at [localhost:4000](http://localhost:4000) by default)
+* Build bundle: `yarn build`
+* Run tests: `yarn test`
+* Run tests in watch mode: `yarn test:watch`
+* Run type checking: `yarn flow`
+* Lint code: `yarn lint`
+* Format code: `yarn format`
+* Install precommit hook: `yarn precommit:install`
+* Uninstall precommit hook: `yarn precommit:uninstall`
 
 ## Precommit hook
 
-In order to use the precommit hook, you must first run `npm run precommit:install`.
+In order to use the precommit hook, you must first run `yarn precommit:install`.
 The precommit hook will run the tests, type checker, linter, and formatter
 prior to commiting changes, and exit if any of these steps failed. If you
 do not want to use this feature, simply remove the precommit scripts and the
