@@ -11,7 +11,7 @@ const devEntries = [
   'react-hot-loader/patch',
   `webpack-dev-server/client?${publicPath}`,
   'webpack/hot/only-dev-server',
-  path.join(__dirname, 'demo', 'index.js'),
+  path.join(__dirname, 'demo', 'index.ts'),
 ];
 
 const devOutput = {
@@ -27,7 +27,7 @@ const prodOutput = {
   libraryTarget: 'commonjs2',
 };
 
-const prodEntry = './src/index.js';
+const prodEntry = './src/index.ts';
 
 const plugins = [];
 
@@ -43,7 +43,7 @@ module.exports = {
   output: isDev ? devOutput : prodOutput,
   resolve: {
     modules: [__dirname, 'node_modules', 'src'],
-    extensions: ['*', '.js', '.jsx'],
+    extensions: ['*', '.js', '.jsx', '.ts', '.tsx'],
   },
   resolveLoader: {
     modules: [path.join(__dirname, 'node_modules')],
@@ -52,11 +52,10 @@ module.exports = {
   module: {
     rules: [
       {
-        test: /\.jsx$/,
-        use: ['babel-loader'],
-        include: [path.join(__dirname, 'src'), path.join(__dirname, 'demo')],
-        exclude: /node_modules/,
-      },
+        test: /\.tsx?$/,
+        use: 'ts-loader',
+        exclude: /node_modules/
+      }
     ],
   },
   devServer: {
