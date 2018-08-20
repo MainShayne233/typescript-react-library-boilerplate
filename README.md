@@ -1,15 +1,15 @@
-# React Library Boilerplate
+# Typescript React Library Boilerplate
 
 Minimal boilerplate for writing React libaries
 
-(builds off [this JavaScript Library Boilerplate](https://github.com/MainShayne233/javascript-library-boilerplate))
+(builds off [this React Boilerplate Library](https://github.com/MainShayne233/react-library-boilerplate))
 
 ## Tools
 
 * [Babel](https://babeljs.io/) for ES6 + other JavaScript features
 * [Webpack](https://webpack.js.org/) for building bundle
 * [Webpack Dev Server](https://github.com/webpack/webpack-dev-server) and [React Hot Loader](https://github.com/gaearon/react-hot-loader) For live development
-* [Flow](https://flow.org/) for type checking
+* [Typescript](https://www.typescriptlang.org/) for type checking
 * [Mocha](https://mochajs.org/) and [Chai](http://www.chaijs.com/) and [jsdoc-test](https://github.com/MainShayne233/jsdoc-test) for testing
 * [ESlint](https://eslint.org/) with [Airbnb's config](https://www.npmjs.com/package/eslint-config-airbnb) for linting
 * [Prettier](https://github.com/prettier/prettier) for auto code formatting
@@ -49,7 +49,7 @@ Then change the following to accomodate your library:
 * Build bundle: `yarn build`
 * Run tests: `yarn test`
 * Run tests in watch mode: `yarn test:watch`
-* Run type checking: `yarn flow`
+* Run type checking: `yarn typecheck`
 * Lint code: `yarn lint`
 * Format code: `yarn format`
 * Install precommit hook: `yarn precommit:install`
