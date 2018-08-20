@@ -4,8 +4,8 @@ import * as Enzyme from 'enzyme';
 import * as EnzymeAdapter from 'enzyme-adapter-react-16';
 import { expect } from 'chai';
 
-it ('works', () => {
-  expect(true).to.equal(true);
+it ('should fail', () => {
+  expect(true).to.equal(false);
 });
 //import NeatComponent from '../src/NeatComponent';
 //
