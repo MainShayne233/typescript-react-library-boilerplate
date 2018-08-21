@@ -8,10 +8,10 @@
     "allowJs": false,
     "moduleResolution": "node"
   },
-  "files": [
-    "src/index.ts",
-    "demo/index.ts",
-    "test/index_test.tsx"
+  "include": [
+    "src/**/*",
+    "test/**/*",
+    "demo/**/*"
   ],
   "exclude": [
     "./node_modules/**/*"

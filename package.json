@@ -6,19 +6,27 @@
   "scripts": {
     "start": "webpack-dev-server --mode development",
     "build": "NODE_ENV=production webpack -p",
-    "test": "NODE_ENV=test mocha-webpack test/**/*.tsx* --recursive",
-    "test:watch": "npm run test -- --watch",
+    "test": "NODE_ENV=test mocha-webpack test/**/*.ts*",
+    "test:watch": "yarn test -- --watch",
     "typecheck": "tsc",
+    "typecheck:watch": "yarn typecheck -- --watch",
     "lint": "eslint {src,test}/**/*.js* webpack.config.js",
     "format": "prettier {src,test}/**/*.js  webpack.config.js  --write",
     "precommit:install": "./node_modules/precommit/bin/cli.js install -c .precommit.json",
     "precommit:uninstall": "./node_modules/precommit/bin/cli.js remove"
   },
   "babel": {
-    "presets": ["es2015", "stage-0", "react", "flow"],
+    "presets": [
+      "es2015",
+      "stage-0",
+      "react",
+      "flow"
+    ],
     "env": {
       "test": {
-        "plugins": ["babel-plugin-rewire"]
+        "plugins": [
+          "babel-plugin-rewire"
+        ]
       }
     }
   },
@@ -58,7 +66,8 @@
     "@types/prop-types": "^15.5.5",
     "@types/react-dom": "^16.0.7",
     "babel-plugin-rewire": "^1.1.0",
-    "mocha-webpack": "^1.1.0",
+    "jsdom-global": "^3.0.2",
+    "mocha-webpack": "^2.0.0-beta.0",
     "prop-types": "^15.6.1",
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
