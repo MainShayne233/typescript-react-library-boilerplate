@@ -17,9 +17,7 @@ const getValueForEnvironment = (environmentValueTable) => {
   } else if (DEFAULT in environmentValueTable) {
     return environmentValueTable[DEFAULT];
   } else {
-    throw new Error(
-      `No environment value defined for ${ENVIRONMENT} in ${environmentValueTable}`,
-    );
+    throw new Error(`No environment value defined for ${ENVIRONMENT}`);
   }
 };
 
@@ -74,16 +72,16 @@ const getDevTool = () =>
   });
 
 const getTarget = () =>
-      getValueForEnvironment({
-        [TEST]: 'node',
-        [DEFAULT]: 'web',
-      });
+  getValueForEnvironment({
+    [TEST]: 'node',
+    [DEFAULT]: 'web',
+  });
 
 const getMode = () =>
-      getValueForEnvironment({
-        [PROD]: PROD,
-        [DEFAULT]: DEV,
-      });
+  getValueForEnvironment({
+    [PROD]: PROD,
+    [DEFAULT]: DEV,
+  });
 
 module.exports = {
   mode: getMode(),

@@ -24,7 +24,7 @@ and use the appropriate `npm` commands.
 
 ```bash
 # clone the repo and name it whatever you like
-git clone https://github.com/MainShayne233/react-library-boilerplate very_helpful_library
+git clone https://github.com/MainShayne233/typescript-react-library-boilerplate very_helpful_library
 
 # enter project, re-initialize git, and install dependencies
 cd very_helpful_library
@@ -50,6 +50,7 @@ Then change the following to accomodate your library:
 * Run tests: `yarn test`
 * Run tests in watch mode: `yarn test:watch`
 * Run type checking: `yarn typecheck`
+* Run type checking in watch mode: `yarn typecheck:watch`
 * Lint code: `yarn lint`
 * Format code: `yarn format`
 * Install precommit hook: `yarn precommit:install`

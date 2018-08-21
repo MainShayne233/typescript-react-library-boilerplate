@@ -19,8 +19,7 @@
     "presets": [
       "es2015",
       "stage-0",
-      "react",
-      "flow"
+      "react"
     ],
     "env": {
       "test": {
